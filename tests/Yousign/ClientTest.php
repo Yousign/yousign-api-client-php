@@ -75,14 +75,19 @@ class ClientTest extends TestCase
 
         $host = (new Environment(Environment::DEMO))->getHost();
 
+        $resultSoap = new \stdClass();
+        $resultSoap->return = true;
+
         $soapClient = $this->getMockFromWsdl(ClientFactory::buildWsdlUrl($host, Services::AUTHENTICATION));
         $soapClient
             ->method('__call')
             ->with('connect', array())
-            ->willReturn(true);
+            ->willReturn($resultSoap);
 
         $this->client->addSoapClient(Services::AUTHENTICATION, $soapClient);
-        $this->client->connect();
+
+        $this->client->__call('connect', array());
+
         $this->assertInstanceOf(\SoapClient::class, $this->client->getLastClient());
     }
 
