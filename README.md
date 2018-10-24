@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Yousign/yousign-api-client-php.svg?branch=client-v2)](https://travis-ci.com/Yousign/yousign-api-client-php)
+
 # Yousign API client v1 for PHP
 
 This client is for the api v1 of Yousign and don't use Nusoap
