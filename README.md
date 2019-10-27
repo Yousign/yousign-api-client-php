@@ -24,7 +24,6 @@ $client = $factory->createClient();
 
 $result = $client->getCosignedFilesFromDemand(array(
     'idDemand' => 523020,
-    'token' => '',
     'idFile' => 1128720
 ));
 
@@ -36,4 +35,4 @@ if(!mkdir($dir) && !is_dir($dir, 0775)) {
 file_put_contents($dir.'/result.pdf', $result->file);
 ```
 
-Library in construction
+Others examples are available into the [examples](./examples) directory.

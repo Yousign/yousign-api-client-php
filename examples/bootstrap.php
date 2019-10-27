@@ -7,9 +7,9 @@ use Yousign\ClientFactory;
 use Yousign\Environment;
 
 // Values to replace
-$apikey     = '<apikey>';
-$login      = '<login>';
-$password   = Authentication::buildHashedPassword('<password>');
+$apikey     = 'B3htk2MVMx6htXwN5gu1m4WVptsG5W91IdQuFGbWytvm4H0rOs';
+$login      = 'kevin.auvinet129@yopmail.com';
+$password   = Authentication::buildHashedPassword('streeter94');
 
 $authentication = new Authentication($apikey, $login, $password);
 
