@@ -1,4 +1,12 @@
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Yousign/yousign-api-client-php?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+## :warning: This client is for the first version of Yousign and is now deprecated :warning:
+
+The new api is restful and there is no official client for this.
+
+You can find the new api documentation at this link => https://dev.yousign.com/?version=latest
+
+Some non officials clients exists if you need : https://github.com/search?q=yousign
+
+---
 
 # Client PHP de l'API SOAP Yousign (v1.3.0)
 
